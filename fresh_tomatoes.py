@@ -167,4 +167,5 @@ def open_movies_page(movies):
     url = os.path.abspath(output_file.name)
     webbrowser.open('file://' + url, new=2)
 
-open_movies_page(entertainment_center.movies)
+if __name__ == '__main__':
+    open_movies_page(entertainment_center.movies)
